@@ -195,6 +195,161 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Game Updates & Items */}
+      <section className="py-16 px-4 bg-gradient-to-r from-purple-600 to-pink-600">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-white text-center mb-12">
+            <Icon
+              name="Sparkles"
+              size={32}
+              className="inline mr-3 text-yellow-400"
+            />
+            Игровые обновления
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* New Items Collection */}
+            <Card className="bg-white/20 border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105">
+              <CardHeader className="p-0">
+                <img
+                  src="/img/24cac24f-2ffc-4401-979a-fd782e04f702.jpg"
+                  alt="New Items Collection"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between mb-2">
+                  <CardTitle className="text-white">Новые предметы</CardTitle>
+                  <Badge className="bg-green-500 text-white">Доступно</Badge>
+                </div>
+                <CardDescription className="text-white/80 mb-4">
+                  Крутые шляпы, мечи и аксессуары для твоего персонажа
+                </CardDescription>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center text-white/70">
+                    <Icon name="Package" size={16} className="mr-1" />
+                    <span>15+ предметов</span>
+                  </div>
+                  <Button
+                    size="sm"
+                    className="bg-purple-500 hover:bg-purple-600"
+                  >
+                    Посмотреть
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Legendary Items */}
+            <Card className="bg-white/20 border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105">
+              <CardHeader className="p-0">
+                <img
+                  src="/img/4ce568df-9f28-4492-a829-a4725451539c.jpg"
+                  alt="Legendary Items"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between mb-2">
+                  <CardTitle className="text-white">Легендарные вещи</CardTitle>
+                  <Badge className="bg-yellow-500 text-white">Редкие</Badge>
+                </div>
+                <CardDescription className="text-white/80 mb-4">
+                  Эксклюзивные предметы с особыми эффектами
+                </CardDescription>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center text-white/70">
+                    <Icon name="Crown" size={16} className="mr-1" />
+                    <span>5 предметов</span>
+                  </div>
+                  <Button
+                    size="sm"
+                    className="bg-yellow-500 hover:bg-yellow-600"
+                  >
+                    Получить
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Seasonal Items */}
+            <Card className="bg-white/20 border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105">
+              <CardHeader className="p-0">
+                <img
+                  src="/img/93ababf6-8d48-4b4a-866e-1a52c0be5f49.jpg"
+                  alt="Seasonal Items"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+              </CardHeader>
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between mb-2">
+                  <CardTitle className="text-white">Сезонные вещи</CardTitle>
+                  <Badge className="bg-orange-500 text-white">Лето</Badge>
+                </div>
+                <CardDescription className="text-white/80 mb-4">
+                  Праздничные костюмы и летние аксессуары
+                </CardDescription>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center text-white/70">
+                    <Icon name="Calendar" size={16} className="mr-1" />
+                    <span>До 31 июля</span>
+                  </div>
+                  <Button
+                    size="sm"
+                    className="bg-orange-500 hover:bg-orange-600"
+                  >
+                    Купить
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Featured Items Showcase */}
+          <div className="mt-12 bg-white/10 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-white text-center mb-8">
+              <Icon
+                name="Star"
+                size={24}
+                className="inline mr-2 text-yellow-400"
+              />
+              Рекомендуемые предметы
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Icon name="Crown" size={24} className="text-white" />
+                </div>
+                <h4 className="text-white font-semibold mb-1">
+                  Золотая корона
+                </h4>
+                <p className="text-white/70 text-sm">999 R$</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Icon name="Zap" size={24} className="text-white" />
+                </div>
+                <h4 className="text-white font-semibold mb-1">Молния-меч</h4>
+                <p className="text-white/70 text-sm">1499 R$</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Icon name="Heart" size={24} className="text-white" />
+                </div>
+                <h4 className="text-white font-semibold mb-1">Крылья любви</h4>
+                <p className="text-white/70 text-sm">799 R$</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Icon name="Shield" size={24} className="text-white" />
+                </div>
+                <h4 className="text-white font-semibold mb-1">Щит героя</h4>
+                <p className="text-white/70 text-sm">1199 R$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* News & Tournaments */}
       <section id="news" className="py-16 px-4">
         <div className="container mx-auto">
